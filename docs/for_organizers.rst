@@ -1,7 +1,7 @@
 .. for_organizers:
 
 Advice for Organizers
--------------------
+---------------------
 
 *   Join http://groups.google.com/group/pystar to ask for help, and to promote your event
 *   Connect with your local Python User Groups if possible to network between your workshops

@@ -29,6 +29,7 @@ commands to do the same work for us.
 
     curl -s 'http://www.cryptonomicon.com/command.zip' | gunzip | grep -i -A22 'pipe' | less
     # type 'q' to quit from 'less' when you are done.
+
 Let's break this down.
 
 #.  The ``|`` takes the text **output** from one command and **pipes** it into 

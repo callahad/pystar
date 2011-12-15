@@ -1,4 +1,4 @@
-.. _badge_basic_html
+.. _badge_basic_html:
 
 Edit Basic Html
 -------------------

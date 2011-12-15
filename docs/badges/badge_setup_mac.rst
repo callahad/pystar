@@ -106,15 +106,21 @@ Terminal
 While ``Terminal`` is a full-featured utility, its default configuration is a bit poor for programming usage.  Let's configure ``Terminal`` to be a bit more friendly.
 
 1. In your Terminal, copy and paste this command into your terminal and then hit enter.  All this yarnbarf is to enable a colored terminal prompt.
-  .. code-block:: bash
 
-    echo "export PS1='\[\e[0;33m\]\u\[\e[0;37m\]\[\e[0;36m\](\W)\[\e[0;0m\]\$ '" >> .bash_profile
+   .. code-block:: bash
+
+      echo "export PS1='\[\e[0;33m\]\u\[\e[0;37m\]\[\e[0;36m\](\W)\[\e[0;0m\]\$ '" >> .bash_profile
+
 2. Click ``Terminal`` in the upper-left hand corner, and go to Preferences.
 3. Click on the Settings Section (right of Startup and left of Window Groups)
-  a. Highlight the Pro choice in the list on the left, and then click the Default button underneath
+
+   a. Highlight the Pro choice in the list on the left, and then click the Default button underneath
+
 4. Click the Window tab (left of Text and right of Shell)
-  a. Click the black block left of "Color" and drag the Opacity slider to the right (100%)
-  b. Set the number of Rows to 40, under the Window Size section.  Feel free to adjust taller or shorter to taste.
+
+   a. Click the black block left of "Color" and drag the Opacity slider to the right (100%)
+   b. Set the number of Rows to 40, under the Window Size section.  Feel free to adjust taller or shorter to taste.
+
 5. Close your Preferences window and terminal, and then go to Shell > New Window
 
 Done properly, your new terminal should look like this:

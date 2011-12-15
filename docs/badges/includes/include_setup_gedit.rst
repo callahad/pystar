@@ -8,30 +8,30 @@ Suggested configuration:
 In the preferences window
 
 * **view**, turn on: 
-    
-    * display line numbers
-    * display right margin
-    * highlight matching bracket
-    * highlight current line
+
+  * display line numbers
+  * display right margin
+  * highlight matching bracket
+  * highlight current line
 
 * **editor**:
 
-    * change tab with to 4
-    * check the box to insert spaces instead of tabs
+  * change tab with to 4
+  * check the box to insert spaces instead of tabs
 
 * **font & colors**:
 
-    * choose a good monospace editor font
-    * choose a color scheme (Gregg likes Cobalt)
+  * choose a good monospace editor font
+  * choose a color scheme (Gregg likes Cobalt)
 
 * **plugins**
 
-    * checkupdate
-    * code comment
-    * drawspaces
-    * filebrowser
-    * indentlines
-    * python console
+  * checkupdate
+  * code comment
+  * drawspaces
+  * filebrowser
+  * indentlines
+  * python console
 
 Once you are satified, restart ``gedit``.  If it looks similar to the screenshot below, you are done!  
 

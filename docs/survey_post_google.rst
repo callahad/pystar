@@ -1,4 +1,4 @@
-.. _post_survey_label:
+.. _post_survey_google_label:
 
 Post-Workshop Assessment
 =============================================

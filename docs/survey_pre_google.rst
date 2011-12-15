@@ -1,4 +1,4 @@
-.. _pre_survey_label:
+.. _pre_survey_google_label:
 
 Pre-Workshop Assessment
 =============================================

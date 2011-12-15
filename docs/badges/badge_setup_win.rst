@@ -35,7 +35,7 @@ Get information about your computer!
 #. Check to see that you have at least 1 Gb of disk space left.
 
 ::
-    
+
     Control Panel > System 
 
 

@@ -121,5 +121,3 @@ confusing,  was it too magical? comments around the physical space)
 
 
 .. |ansbar| replace:: ``--  -  +  ++   :``
-
-

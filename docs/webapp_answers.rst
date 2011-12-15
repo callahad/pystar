@@ -361,6 +361,3 @@ Why are ``request.POST`` values always strings?
 * Strings are the universal currency of computing!  
 * Even when something looks like an int, it is better not to guess (e.g. ZIP codes).
 * `Explicit is better than Implicit` is part of the `Zen of Python <http://www.python.org/dev/peps/pep-20/>`_ .  SNARK:  :ref:`Django isn't always very explicit <webapp_answers_django_magical>`.
-
-
-

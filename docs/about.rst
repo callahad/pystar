@@ -1,6 +1,6 @@
 About
 ===========
-   
+
 Goal
 ----
 
@@ -44,4 +44,3 @@ Contribute
 You may have noticed our "Fork me on GitHub" banner - please do it! We would love for you 
 to contribute badges/modules/typos corrections - anything to help make this as engaging 
 and useful as a distributed workshop planning site can be.
-

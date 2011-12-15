@@ -38,20 +38,20 @@ Let's break this down.
     ``-s`` option?
 
     ..  container:: answer-hidden
-        
+
         Curl is a command line client for hitting urls.  We can use it
         to download the web page.  ``-s`` makes it run 'silently'.
 
 #.  ``gunzip``?  What is does gunzip do?
 
     ..  container:: answer-hidden
-        
+
         it unzips the file :)  Nothing magical there!  
 
 #.  What file is ``gunzip`` operating on?
 
     ..  container:: answer-hidden
-        
+
         None, really.  Or rather it's operating on a special file called
         ``stdin``, which is here attached to the ``stdout`` out of the curl
         command, via the **pipe**.  
@@ -88,7 +88,3 @@ Exercises:
         ::
 
             curl 'http://www.gutenberg.org/files/1342/1342-h/1342-h.htm' | grep -i 'pride' | wc
-
-
-
-

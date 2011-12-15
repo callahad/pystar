@@ -34,7 +34,7 @@ Now we will make the code from Exercise 0 a little less tedious to write and mor
 ..  code-block:: python
 
     import turtle
-    
+
     def left_square():
         n = 4
         while n:
@@ -42,7 +42,7 @@ Now we will make the code from Exercise 0 a little less tedious to write and mor
             turtle.forward(25)
             n = n-1
         turtle.exitonclick()
-        
+
     left_square()
 
 When you run turtle2.py from the CLI, it should look just like it did when you ran turtle1.py. Let's change the ``left_square()`` function so that it can make a square with a user specified side length(save this as turtle3.py):
@@ -56,7 +56,7 @@ When you run turtle2.py from the CLI, it should look just like it did when you r
             turtle.forward(length)
             n = n-1
         turtle.exitonclick()
-        
+
     length = raw_input("How big would you like your square to be? ")
     left_square(int(length))
 
@@ -88,7 +88,7 @@ If you're impatient, here is the solution:
             turtle.left(60)
             turtle.forward(length)
             n = n-1
-        
+
     triangle(150)
     hexagon(150)
     turtle.exitonclick()

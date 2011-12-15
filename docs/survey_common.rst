@@ -1,5 +1,3 @@
-
-
 This is a short skills assessment to get an idea of where everyone is at the beginning and end of the workshop.
 Add short notes after the question if you want to elaborate on your answers.
 
@@ -68,4 +66,3 @@ Circle your selection. ('--': strongly disagree, '-': disagree, '+': agree, '++'
 
 .. |ansbar| replace:: ``--  -  +  ++   :``
 .. |yesno| replace:: ( yes | no )
-

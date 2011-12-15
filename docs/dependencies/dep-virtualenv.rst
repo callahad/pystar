@@ -1,5 +1,3 @@
-
-
 .. _dep-virtualenv-label:
 
 virtualenv
@@ -29,8 +27,8 @@ consistent builds.
 Get ``virtualenv``!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:: 
-    
+::
+
     $ pip install virtualenv
 
 .. _dep-virtualenv-verify-label:

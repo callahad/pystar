@@ -40,5 +40,3 @@ Two things I got from this workshop but didn't expect were:
 Please write any additional comments and suggestions for improving this workshop
 below, or on the back of this form.  (Suggestions might be:  parts that were
 confusing,  was it too magical? comments around the physical space)
-
-

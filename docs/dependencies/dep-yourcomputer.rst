@@ -1,5 +1,3 @@
-
-
 .. _dep-yourcomputer-label:
 
 your computer
@@ -40,20 +38,19 @@ windows
 ~~~~~~~~~~~~~~~~~~~~~
 
 ::
-    
-    Control Panel > System 
 
+    Control Panel > System 
 
 .. image:: /images/windows_sys.jpg
 
-.. _dep-yourcomputer-Mac OSX-how-label:
 
+.. _dep-yourcomputer-Mac OSX-how-label:
 
 Mac OSX
 ~~~~~~~~~~~~~~~~~~~~~
 
 ::
-    
+
     Apple menu (upper left) > About This Mac
 
 .. image:: /images/about_mac.png
@@ -69,13 +66,9 @@ In your terminal::
     uname -a 
 
 
-
-
 .. _dep-yourcomputer-verify-label:
 
 Verify It Works!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Know your OS and version number?  Good!
-
-

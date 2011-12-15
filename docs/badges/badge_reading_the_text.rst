@@ -13,7 +13,7 @@ what the authors probably *meant*.
 
     # this is a comment, in bash, python, and many other languages.
     # comments can be multiline
-    
+
     /* in some languages, comments look like this */
 
     # '$' implies a 'unix/terminal/bash' prompt
@@ -102,11 +102,11 @@ Common Actions
 navigate (or 'go to')
     #.  in a web context: open a url in your browser, or follow some link
         by clicking.  
-        
+
         ex.:  Navigate to localhost -> (open http://localhost/ )
 
     #.  at the prompt:  ``cd`` or *change directory* to some path.
-        
+
         ex.:  "Go to your project directory" -> ``$ cd ~yourname/yourproject``
 
 edit
@@ -148,7 +148,7 @@ Check your Understanding
     #. ``# I don't know what is going on here!``
 
     ..  container:: answer-hidden
-        
+
         #. unix (bash). 
         #. python.  it imports the ``time`` module.
         #. could be either :).  It's a comment, in any case!  
@@ -167,6 +167,3 @@ Check your Understanding
             $ cd ~
             $ ls
             $ ls -alF  # shows *all* files, in *long* format
-
-
-

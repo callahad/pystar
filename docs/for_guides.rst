@@ -20,5 +20,3 @@ Your role is to *support* the learners and help create a good learning environme
 
 
 .. include:: safer_space.rst
-
-

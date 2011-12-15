@@ -88,8 +88,8 @@ Verify It Works!
    .. code-block:: bash
 
       bash --version
-  
-  Output should look similar to:
+
+   Output should look similar to:
 
    .. code-block:: bash
 
@@ -170,7 +170,6 @@ python
 
 What is ``python``?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 
 Python is a general purpose, dynamically-typed, strongly-typed, interpreted
 computer programming language.  

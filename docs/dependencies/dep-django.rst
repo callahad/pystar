@@ -30,8 +30,8 @@ virtualenv. We're also going to install ``south``, a Django helper application w
 
 .. code-block:: bash
 
-    $ pip install django
-    $ pip install south
+   $ pip install django
+   $ pip install south
 
 .. _django-verify-label:
 
@@ -40,12 +40,12 @@ Verify It Works!
 
 .. code-block:: bash
 
-    $ python
-    >>> import django
-    
+   $ python
+   >>> import django
+
 To quit the python prompt do::
 
-    exit()
+   exit()
 
 .. _django-app-create-label:
 
@@ -57,9 +57,9 @@ Open a new Terminal window and type the following:
 
 ..  code-block:: bash
 
-   mkdir django_projects
-   cd django_projects
-   django-admin.py startproject myproject
+    mkdir django_projects
+    cd django_projects
+    django-admin.py startproject myproject
 
 Both commands should provide no output.
 Once that's finished, type the following in the Terminal window: 

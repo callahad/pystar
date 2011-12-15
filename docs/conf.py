@@ -220,4 +220,3 @@ man_pages = [
     ('index', 'pystarprogrammingcurriculum', u'PyStar Programming Curriculum Documentation',
      [u'Asheesh Laroia, Jessica T McKellar, Lukas Blakk, Gregg Lind, Amanda Nyren'], 1)
 ]
-

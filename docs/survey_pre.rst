@@ -27,7 +27,3 @@ Three things I want from this workshop are...
 #.  
 
 #.  
-
-
-
-

@@ -159,10 +159,10 @@ Verify It Works!
 1. Start up a terminal. You can find the Terminal application at `Applications/Accessories/Terminal`, or it may already be on your menu bar.
 2. Test your Python install at the command prompt. Type ``python`` and hit enter. You should see something like::
 
-    Python 2.5.2 (r252:60911, Jan 24 2010, 17:44:40) 
-    [GCC 4.3.2] on linux2
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> 
+   Python 2.5.2 (r252:60911, Jan 24 2010, 17:44:40) 
+   [GCC 4.3.2] on linux2
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>> 
 
 To exit the Python prompt, type ``exit()``
 and press Enter. This will take you back to the Terminal command prompt.

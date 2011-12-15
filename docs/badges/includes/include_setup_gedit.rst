@@ -1,5 +1,5 @@
 Verify It Works!
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 After installing, start ``gedit`` up by clicking on its icon, typing ``gedit`` from your cli or the like.  
 

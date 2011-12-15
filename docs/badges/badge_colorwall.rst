@@ -17,12 +17,14 @@ You can also see the ColorWall in action here: http://vimeo.com/16522975.
 Download the files you will need here:
 
 - Linux/Mac Users
-    - :download:`ColorWall.tar.gz </resources/ColorWall.tar.gz>` 
-    - :download:`WorkshopExercises.tar.gz </resources/WorkshopExercises.tar.gz>`
-- Windows Users 
-    - :download:`ColorWall.zip </resources/ColorWall.zip>`
-    - :download:`WorkshopExercises.zip </resources/WorkshopExercises.zip>`
 
+  - :download:`ColorWall.tar.gz </resources/ColorWall.tar.gz>` 
+  - :download:`WorkshopExercises.tar.gz </resources/WorkshopExercises.tar.gz>`
+
+- Windows Users 
+
+  - :download:`ColorWall.zip </resources/ColorWall.zip>`
+  - :download:`WorkshopExercises.zip </resources/WorkshopExercises.zip>`
 
 Basic Programming
 -----------------------------
@@ -53,24 +55,23 @@ you unzipped/untarred the ColorWall download.
 
 Run the example effects:
 
-
-On Windows, assuming the ColorWall software was downloaded to ``C:\Users\yourusername\Desktop\ColorWall`` 
-
-.. code-block:: bash
-
-    run \Python27\python.exe "C:\Users\yourusername\Desktop\colorwall\ColorWall\run.py"
-
-On OS X, assuming the ColorWall software was downloaded to ``~/Desktop/colorwall/ColorWall`` run 
+On Windows, assuming the ColorWall software was downloaded to ``C:\Users\yourusername\Desktop\ColorWall``
 
 .. code-block:: bash
 
-    python ~/Desktop/colorwall/ColorWall/run.py
+   run \Python27\python.exe "C:\Users\yourusername\Desktop\colorwall\ColorWall\run.py"
 
-On Linux, assuming the ColorWall software was downloaded to ``~/Desktop/colorwall/ColorWall`` run 
+On OS X, assuming the ColorWall software was downloaded to ``~/Desktop/colorwall/ColorWall`` run
 
 .. code-block:: bash
 
-    python ~/Desktop/colorwall/ColorWall/run.py
+   python ~/Desktop/colorwall/ColorWall/run.py
+
+On Linux, assuming the ColorWall software was downloaded to ``~/Desktop/colorwall/ColorWall`` run
+
+.. code-block:: bash
+
+   python ~/Desktop/colorwall/ColorWall/run.py
 
 Other Resources
 -------------------------
@@ -80,9 +81,9 @@ http://openhatch.org/wiki/Boston_Python_workshop/Friday_handout#Setting_up_the_C
 https://lsblakk@github.com/lsblakk/ColorWall.git ColorWall code on GitHub
 
 http://en.wikipedia.org/wiki/HSL_and_HSV has the
-explanation for what HSV color space means. What it boils down 
-to for the purposes of our project is this: each pixel gets 3 
-values: hue (e.g. am I red, green, or blue), saturation 
-(am I pale or intense), and value (am I bright or dark). 
-effects.py has example effects that 
-exercise hue, saturation, and value independently.
+explanation for what HSV color space means. What it boils down
+to for the purposes of our project is this: each pixel gets 3
+values: hue (e.g. am I red, green, or blue), saturation
+(am I pale or intense), and value (am I bright or dark).
+effects.py has example effects that
+exercise hue, saturation, and value independently

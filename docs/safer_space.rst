@@ -1,4 +1,4 @@
-.. safer_space:  
+.. safer_space:
 
 Safer Space
 ^^^^^^^^^^^^^^^
@@ -19,5 +19,3 @@ PyStar is a Safer Space.  PyStar is a Learning Space.
 *   Good coversations involve multiple voices.
 *   Make space for quiet voices to speak.
 *   Learners have different desires and needs.
-
-

@@ -90,18 +90,18 @@ Create necessary directories, activate virtualenv
 In your terminal, starting from somewhere reasonable (here, ``mydir``)
 
 .. code-block:: bash
-    
-    # remember in bash, # means comment -- don't type these :)
-    cd mydir
-    mkdir django_projects
-    virtualenv --no-site-packages pystar
-    # New python executable in pystar/bin/python
-    # Installing setuptools............done.
-    source pystar/bin/activate  # windows -> pystar\Scripts\activate.bat 
-    # (pystar)My-MacBook-Pro:mydir $ 
-    # $ ls .
-    # django_projects pystar
-    
+
+   # remember in bash, # means comment -- don't type these :)
+   cd mydir
+   mkdir django_projects
+   virtualenv --no-site-packages pystar
+   # New python executable in pystar/bin/python
+   # Installing setuptools............done.
+   source pystar/bin/activate  # windows -> pystar\Scripts\activate.bat 
+   # (pystar)My-MacBook-Pro:mydir $ 
+   # $ ls .
+   # django_projects pystar
+
 
 Switch to the right directory
 -------------------------------------------
@@ -113,7 +113,7 @@ You can do that by typing this into your terminal:
 
 .. code-block:: bash
 
-    cd django_projects
+   cd django_projects
 
 In the Friday setup portion of the workshop, you already saw how 
 to use the ``django-admin.py`` command to start a project. However, today, we're using a super basic Django project that has some of the less crucial settings already predefined. Download the files at `http://pystar.org/_downloads/myproject.tar.gz <http://pystar.org/_downloads/myproject.tar.gz>`_ and add the ``myproject`` folder to your ``django_projects`` directory.
@@ -127,13 +127,13 @@ Let’s look at files in the project (you can ignore any .pyc files). The defaul
 look like this:
 
 .. code-block:: bash
-    
-    # remember, '$ ' indicates the terminal prompt, don't type it!
-    $ ls
-        __init__.py
-        manage.py
-        settings.py
-        urls.py
+
+   # remember, '$ ' indicates the terminal prompt, don't type it!
+   $ ls
+       __init__.py
+       manage.py
+       settings.py
+       urls.py
 
 These files are:
 
@@ -146,29 +146,29 @@ Start the Development (Local) Server
 -------------------------------------
 
 #. Verify the development server will start. 
-    
-    a)  Run the command:
 
-        .. code-block:: bash
+   a) Run the command:
 
-            python manage.py runserver
+      .. code-block:: bash
 
-    b) Review the output in your terminal.  It should look similar to:
+         python manage.py runserver
 
-        .. code-block:: bash
+   b) Review the output in your terminal.  It should look similar to:
 
-            Validating models...
-            0 errors found.
-            
-            Django version 1.2, using settings 'myproject.settings'
-            Development server is running at http://127.0.0.1:8000/
-            Quit the server with CONTROL-C.
+      .. code-block:: bash
 
-      .. note: 
-        
-        You've started the Django development server, a lightweight web server written in 
-        Python. The Django maintainers include this web server, but on a "deployment" like 
-        http://alwaysdata.com/, you typically tie Django into an existing server like Apache.
+         Validating models...
+         0 errors found.
+
+         Django version 1.2, using settings 'myproject.settings'
+         Development server is running at http://127.0.0.1:8000/
+         Quit the server with CONTROL-C.
+
+    .. note::
+
+       You've started the Django development server, a lightweight web server written in 
+       Python. The Django maintainers include this web server, but on a "deployment" like 
+       http://alwaysdata.com/, you typically tie Django into an existing server like Apache.
 
 #.  Now that the server's running, visit http://127.0.0.1:8000/ with your Web browser. 
     You'll see a "Welcome to Django" page, in pleasant, light-blue pastel. It worked!
@@ -189,22 +189,22 @@ Start the Development (Local) Server
 
 #.  Observe the logging that happens in the terminal where your server is running:
 
-    ..  code-block:: none
+    .. code-block:: none
 
-        [24/Mar/2011 11:50:18] "GET / HTTP/1.1" 200 2057
-    
+       [24/Mar/2011 11:50:18] "GET / HTTP/1.1" 200 2057
+
     which has the format:
 
-    ..  code-block:: none
+    .. code-block:: none
 
-        DATE  METHOD URL  PROTOCOL  RESPONSE_CODE  CONTENTSIZE
+       DATE  METHOD URL  PROTOCOL  RESPONSE_CODE  CONTENTSIZE
 
 #.  Navigate to http://127.0.0.1:8000/some/url/.  What changes in the terminal log?
 
 #.  Exit the server 
 
     #. return to the terminal instance where the development server is running
-   
+
     #. pressing CONTROL-C on your keyboard
 
     #. VERIFY your server is shut down.  How do you do this?  [:ref:`answer <webapp_answers_verify_shutdown>`]
@@ -213,8 +213,8 @@ Start the Development (Local) Server
 
     .. code-block:: bash
 
-        python manage.py runserver 
-        python manage.py runserver 8000
+       python manage.py runserver
+       python manage.py runserver 8000
 
     The '8000' number is the port on which the server runs, by default. *Start* a server on port 8103, and *navigate* to it using your browser
     [:ref:`answer <webapp_answers_8103>`].
@@ -237,16 +237,16 @@ We'll do that with ``git`` and ``Github``. On your own computer, get to a Termin
 
     .. code-block:: bash
 
-         cd ~/django_projects/myproject
+       cd ~/django_projects/myproject
 
 #.  Is this new project?  (It is!)  So:
 
     #. create a git repository in the project directory:
 
-        .. code-block:: bash
+       .. code-block:: bash
 
-            # in myproject
-            git init
+          # in myproject
+          git init
 
     #.  Create your project on GitHub.  Go to http://github.com/ and create a new repository called "myproject". On the main dashboard page, click on "New Repository" fill out the necessary information. cf:  http://help.github.com/create-a-repo/.
 
@@ -254,19 +254,19 @@ We'll do that with ``git`` and ``Github``. On your own computer, get to a Termin
 
     .. code-block:: bash
 
-        (pystar2)Gregg-Linds-MacBook-Pro:myproject gregg$ git status
-        # On branch master
-        #
-        # Initial commit
-        #
-        # Untracked files:
-        #   (use "git add <file>..." to include in what will be committed)
-        #
-        #   __init__.py
-        #   manage.py
-        #   settings.py
-        #   urls.py
-        nothing added to commit but untracked files present (use "git add" to track)
+       (pystar2)Gregg-Linds-MacBook-Pro:myproject gregg$ git status
+       # On branch master
+       #
+       # Initial commit
+       #
+       # Untracked files:
+       #   (use "git add <file>..." to include in what will be committed)
+       #
+       #   __init__.py
+       #   manage.py
+       #   settings.py
+       #   urls.py
+       nothing added to commit but untracked files present (use "git add" to track)
 
     None of the files are **tracked**.  That is, ``git`` doesn't know about them!
 
@@ -276,7 +276,7 @@ We'll do that with ``git`` and ``Github``. On your own computer, get to a Termin
 
     .. code-block:: bash
 
-        git add *.py   # all .py files, using a wildcard match.
+       git add *.py   # all .py files, using a wildcard match.
 
     Now git is aware of your files.  Use ``git status`` to see them there in
     the *staging* area (the index).
@@ -285,18 +285,17 @@ We'll do that with ``git`` and ``Github``. On your own computer, get to a Termin
 
     .. code-block:: bash
 
-        # -m -> what is the 'message' for the commit
-        git commit -m "Initial commit of django project from the PyStar workshop"
+       # -m -> what is the 'message' for the commit
+       git commit -m "Initial commit of django project from the PyStar workshop"
 
     Look at your changes with  ``git log`` to see your history.  Is your commit message there?
-
 
 #.  Connect the remote github repo to your local one, and use ``git push`` to push those up to your Github repository (putting your user name and project title in the appropriate slots):
 
     .. code-block:: bash
 
-        git remote add origin git@github.com:myusername/myproject.git
-        git push origin master
+       git remote add origin git@github.com:myusername/myproject.git
+       git push origin master
 
 #.  Go to your Github account in your browser. Find the ``myproject`` repository. Do you see your files?
 
@@ -323,10 +322,10 @@ Add yourself as an admin!
 
 #. git add and commit it:
 
-    .. code-block:: bash
+   .. code-block:: bash
 
-        git add settings.py
-        git commit -m "made myself an admin"
+      git add settings.py
+      git commit -m "made myself an admin"
 
 Fix security settings
 ------------------------------------
@@ -339,10 +338,10 @@ uses this key for various sensitive things, you should change it.
 
 #. Verify it looks something like:
 
-    .. code-block:: python
+   .. code-block:: python
 
-        # change this to something arbitrary.
-        SECRET_KEY = '6yl8d1u0+ogcz!0@3_%au)_&ty$%1jcs2hy-!&v&vv2#@pq^(h'
+      # change this to something arbitrary.
+      SECRET_KEY = '6yl8d1u0+ogcz!0@3_%au)_&ty$%1jcs2hy-!&v&vv2#@pq^(h'
 
 #. How would we put a single-quote (\') in our SECRET_KEY?  [:ref:`answer <webapp_answers_single_quote>`]
 
@@ -350,10 +349,10 @@ uses this key for various sensitive things, you should change it.
 
 #. git add and commit it:
 
-    .. code-block:: bash
+   .. code-block:: bash
 
-        git add settings.py
-        git commit -m "changed SECRET_KEY"
+       git add settings.py
+       git commit -m "changed SECRET_KEY"
 
 
 Set up the Database
@@ -364,18 +363,19 @@ Set up the Database
 
     .. code-block:: python
 
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-                'NAME': 'database.db',                      # Or path to database file if using sqlite3.
-                'USER': '',                      # Not used with sqlite3.
-                'PASSWORD': '',                  # Not used with sqlite3.
-                'HOST': '',                      # Set to empty string for 127.0.0.1. Not used with sqlite3.
-                'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-            }
-        }
+       DATABASES = {
+           'default': {
+               'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+               'NAME': 'database.db',                      # Or path to database file if using sqlite3.
+               'USER': '',                      # Not used with sqlite3.
+               'PASSWORD': '',                  # Not used with sqlite3.
+               'HOST': '',                      # Set to empty string for 127.0.0.1. Not used with sqlite3.
+               'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+           }
+       }
 
 #.  Notice that the value of ``default`` is itself another dictionary with information about the site's default  database. We've set our app to use a ``sqlite`` database, in the ``ENGINE`` attribute.
+
     Sqlite is great for development because is stores its data in one normal file on 
     your system and therefore is really simple to move around with your app.
 
@@ -396,18 +396,18 @@ Set up the Database
 
     .. code-block:: python
 
-        INSTALLED_APPS = (
-            'django.contrib.auth',
-            'django.contrib.contenttypes',
-            'django.contrib.sessions',
-            'django.contrib.sites',
-            'django.contrib.messages',
-            # Uncomment the next line to enable the admin:
-            # 'django.contrib.admin',
-            # Uncomment the next line to enable admin documentation:
-            # 'django.contrib.admindocs',
-              'south',
-        )
+       INSTALLED_APPS = (
+           'django.contrib.auth',
+           'django.contrib.contenttypes',
+           'django.contrib.sessions',
+           'django.contrib.sites',
+           'django.contrib.messages',
+           # Uncomment the next line to enable the admin:
+           # 'django.contrib.admin',
+           # Uncomment the next line to enable admin documentation:
+           # 'django.contrib.admindocs',
+             'south',
+       )
 
     What do you think these various **apps** do?  Why does it make sense
     for them to come in a standard configuration?  
@@ -418,7 +418,7 @@ Set up the Database
 
     .. code-block:: bash
 
-        python manage.py syncdb
+       python manage.py syncdb
 
     The syncdb command looks at the ``INSTALLED_APPS`` setting and creates any necessary 
     database tables according to the database settings in your ``settings.py`` file. You'll see a 
@@ -514,9 +514,9 @@ Here are the things to know:
 
 * An **app** is component of a website that does something. For example, the **Django administration** app is something you'll see later in this tutorial.  So is our ``polls`` app.  An app is:
 
-    * single purpose - login, passwords, polls, forum, etc.
-    * orthonogal to / independent of other apps - polls shouldn't have to
-      know the inside details of authentication, for example.
+  * single purpose - login, passwords, polls, forum, etc.
+  * orthonogal to / independent of other apps - polls shouldn't have to
+    know the inside details of authentication, for example.
 
 * A **project** corresponds to a 'website': it contains a ``settings.py`` file, and 
   it may have corresponding databases or other data stores
@@ -558,7 +558,7 @@ that your app plays nicely with other apps, you can publish that directory separ
 
     .. code-block:: bash
 
-        python manage.py startapp polls
+       python manage.py startapp polls
 
     That'll create a directory ``polls`` to house the poll application.
 
@@ -566,24 +566,23 @@ that your app plays nicely with other apps, you can publish that directory separ
 
     .. code-block:: bash
 
-        git status
-        # should show 'polls/' in 'untracked'
-        
+       git status
+       # should show 'polls/' in 'untracked'
 
 #.  While were are here lets make ``git`` ignore 'database.db' by adding
     ``database.db`` to ``.git/info/exclude``.  Verify (using 'git status') that is it gone.
 
 #.  Examine the layout of ``polls`` (we will do more of this in following sections).
 
-    ..  code-block:: bash
+    .. code-block:: bash
 
-         # remember not to type the '$', it just means the prompt'.  
-         $ ls polls
-         polls/
-            __init__.py
-            models.py
-            tests.py
-            views.py
+       # remember not to type the '$', it just means the prompt'.  
+       $ ls polls
+       polls/
+          __init__.py
+          models.py
+          tests.py
+          views.py
 
 #.  Prove that ``polls`` is importable [:ref:`answer <webapp_answers_is_polls_importable>`]
 
@@ -599,15 +598,14 @@ that your app plays nicely with other apps, you can publish that directory separ
 #.  Refill your tea!
 
 
-
 Part 7: Test your Django Project 
 =======================================
 
 #.  Run the default Django tests
 
-    ..  code-block:: bash
+    .. code-block:: bash
 
-        python manage.py test
+       python manage.py test
 
 #.  Examine the output.  If there are errors, what are they?  [:ref:`answer <webapp_answers_django_project_testing_results>`]
 
@@ -615,20 +613,20 @@ Part 7: Test your Django Project
 
     .. code-block:: bash
 
-        python manage.py test polls
+       python manage.py test polls
 
     You should get output like:
 
     .. code-block:: none
 
-        $ python manage.py test polls
-        Creating test database for alias 'default'...
-        .
-        ----------------------------------------------------------------------
-        Ran 1 test in 0.001s
-        
-        OK
-        Destroying test database for alias 'default'...
+       $ python manage.py test polls
+       Creating test database for alias 'default'...
+       .
+       ----------------------------------------------------------------------
+       Ran 1 test in 0.001s
+
+       OK
+       Destroying test database for alias 'default'...
 
 #.  Make it louder!  Run ``python manage.py test polls -v 2`` and see that it 
     now *names* the test --> ``test_basic_addition (polls.tests.SimpleTest)``.  
@@ -642,16 +640,16 @@ Part 7: Test your Django Project
 
     .. code-block:: python
 
-        from django.test import TestCase
-        from test_polls import *
+       from django.test import TestCase
+       from test_polls import *
 
 
 #.  Add it into your project code git repo:
 
-    ..  code-block:: bash
-        
-        git add polls/tests.py polls/test_polls.py
-        git commit -m "added tests"
+    .. code-block:: bash
+
+       git add polls/tests.py polls/test_polls.py
+       git commit -m "added tests"
 
 #.  Examine ``test_polls.py`` in your editor.  This file (provided by us)
     gives acceptance tests for many of the points on the original spec sheet.  Normally
@@ -698,10 +696,8 @@ frameworks might make these choices or use these terms differently.  Who is righ
 [:ref:`answer <webapp_answers_the_right_framework>`]
 
 
-
 Part 10: Mockups, Views, and URLs
 ===================================================================
-
 
 ..  admonition:: Django-Philosophy
 
@@ -727,7 +723,7 @@ In our poll application, we’ll have the following four views:
 
 In Django, each view is represented by a Python function.
 
-Design your URLs 
+Design your URLs
 ---------------------------
 
 The first step of writing views is to design your URL structure. You do this by creating a 
@@ -744,7 +740,7 @@ following format:
 
 .. code-block:: bash
 
-     (regular expression, Python callback function [, optional dictionary])
+   (regular expression, Python callback function [, optional dictionary])
 
 
 Django starts at the first regular expression and makes its way down the list, comparing 
@@ -778,21 +774,21 @@ Django created a default URLconf file called ```urls.py```.
 
     .. code-block:: python
 
-        urlpatterns = patterns('',
-            (r'^polls/$', 'polls.views.index'),
-            (r'^polls/(\d+)/$', 'polls.views.detail'),
-            (r'^polls/(\d+)/results/$', 'polls.views.results'),
-            (r'^polls/(\d+)/vote/$', 'polls.views.vote'),
-            # Examples:
-            # url(r'^$', 'myproject.views.home', name='home'),
-            # url(r'^myproject/', include('myproject.foo.urls')),
+       urlpatterns = patterns('',
+           (r'^polls/$', 'polls.views.index'),
+           (r'^polls/(\d+)/$', 'polls.views.detail'),
+           (r'^polls/(\d+)/results/$', 'polls.views.results'),
+           (r'^polls/(\d+)/vote/$', 'polls.views.vote'),
+           # Examples:
+           # url(r'^$', 'myproject.views.home', name='home'),
+           # url(r'^myproject/', include('myproject.foo.urls')),
 
-            # Uncomment the admin/doc line below to enable admin documentation:
-            # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+           # Uncomment the admin/doc line below to enable admin documentation:
+           # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
-            # Uncomment the next line to enable the admin:
-            # url(r'^admin/', include(admin.site.urls)),
-        )
+           # Uncomment the next line to enable the admin:
+           # url(r'^admin/', include(admin.site.urls)),
+       )
 
 #.  **POP QUIZ**, suppose a visitor goes to http://127.0.0.1:8000/polls/23/results/ , 
 
@@ -821,7 +817,7 @@ Django created a default URLconf file called ```urls.py```.
 
     .. code-block:: bash
 
-        detail(request=<HttpRequest object>, '23')
+       detail(request=<HttpRequest object>, '23')
 
     The '23' part comes from ``(\d+)``. Using parentheses around a pattern "captures" the
     text matched by that pattern and sends it as an argument to the view function; the
@@ -834,7 +830,7 @@ Django created a default URLconf file called ```urls.py```.
 #.  The *idea* that a URL doesn't have to map onto a file, or some other sort
     of static resource, is quite powerful.  The URL is just a way of giving
     instructions to some server, somewhere.
-    
+
     (**Rant**:  In Django, as in most modern frameworks, you have total control
     over the way your URLs look. People on the web 
     won't see cruft like .py or .php or even .html at the end of your URLs.  There is no
@@ -843,8 +839,6 @@ Django created a default URLconf file called ```urls.py```.
 #.  Exercise:  Think about another hypothetical website, "MyMagicToa.st", in which you use
     a virtual toaster.  What might some actions and (and associated urls) 
     be for interacting with it?
-
-
 
 Write Some Views!
 -----------------------------------------
@@ -856,27 +850,27 @@ Write Some Views!
 
     .. code-block:: none
 
-        ViewDoesNotExist at /polls/
+       ViewDoesNotExist at /polls/
 
-        Tried index in module polls.views. Error was: 'module'
-        object has no attribute 'index'
+       Tried index in module polls.views. Error was: 'module'
+       object has no attribute 'index'
 
 #.  Recall this line ``(r'^polls/$', 'polls.views.index')``.
 
 #.  Explore this using your django-shell:  ``python manage.py shell``
 
-    ..  code-block:: python
-        
-        >>> import polls         # imports fine!       
-        >>> import polls.views   # imports fine also!  polls/views.py
-        >>> dir(polls.views) # what is in there!
-        >>> 'index' in dir(polls.views)
-        False
-        >>> import inspect
-        >>> inspect.getsourcefile(polls.views)
-        # something like
-        '/Users/adalovelace/gits/myproject/polls/views.py'
-    
+    .. code-block:: python
+
+       >>> import polls         # imports fine!
+       >>> import polls.views   # imports fine also!  polls/views.py
+       >>> dir(polls.views) # what is in there!
+       >>> 'index' in dir(polls.views)
+       False
+       >>> import inspect
+       >>> inspect.getsourcefile(polls.views)
+       # something like
+       '/Users/adalovelace/gits/myproject/polls/views.py'
+
     So, a mystery?  Where is the view!?  It's nowhere!  The URL parsing is going
     fine, but there is no one listening at the other end of the phone!
     This ``ViewDoesNotExist`` error happened because you 
@@ -892,10 +886,10 @@ Write Some Views!
 
     .. code-block:: python
 
-        from django.http import HttpResponse
-     
-        def index(request):
-            return HttpResponse("Hello, world. You're at the poll index.")
+       from django.http import HttpResponse
+
+       def index(request):
+           return HttpResponse("Hello, world. You're at the poll index.")
 
     This is a very simple view. 
 
@@ -910,16 +904,16 @@ Write Some Views!
 
     .. code-block:: python
 
-         # recall or note that %s means, "subsitute in a string"
+       # recall or note that %s means, "subsitute in a string"
 
-         def detail(request, poll_id):
-             return HttpResponse("You're looking at poll %s." % (poll_id,))
-         
-         def results(request, poll_id):
-             return HttpResponse("You're looking at the results of poll %s." % (poll_id,))
-         
-         def vote(request, poll_id):
-             return HttpResponse("You're voting on poll %s." % (poll_id,))
+       def detail(request, poll_id):
+           return HttpResponse("You're looking at poll %s." % (poll_id,))
+
+       def results(request, poll_id):
+           return HttpResponse("You're looking at the results of poll %s." % (poll_id,))
+
+       def vote(request, poll_id):
+           return HttpResponse("You're voting on poll %s." % (poll_id,))
 
 #.  Save ``views.py``. 
 
@@ -958,7 +952,6 @@ We will come back to templates (and use Django's built-in templating facilities
 rather than simple python string formatting) after we build some models.
 
 
-
 Part 11:  Showing Off!
 =========================
 
@@ -994,26 +987,26 @@ and we are going to be guinea pigs for them!
 
         .. code-block:: bash 
 
-            urlpatterns = patterns('',
-                (r'^$', 'polls.views.redirect_to_polls'),
-                (r'^polls/$', 'polls.views.index'),
+           urlpatterns = patterns('',
+               (r'^$', 'polls.views.redirect_to_polls'),
+               (r'^polls/$', 'polls.views.index'),
 
     #.  in ``polls/views.py``:
 
         .. code-block:: python
-    
-            from django.http import HttpResponseRedirect
-    
-            def redirect_to_polls(request):
-                return HttpResponseRedirect('/polls/')
+
+           from django.http import HttpResponseRedirect
+
+           def redirect_to_polls(request):
+               return HttpResponseRedirect('/polls/')
 
 #.  Restart your local server, and hit http://127.0.0.1/ .  
     What happened?  Look at your logging:
 
     .. code-block:: bash
 
-        [24/Mar/2011 15:01:15] "GET / HTTP/1.1" 302 0
-        [24/Mar/2011 15:01:15] "GET /polls/ HTTP/1.1" 200 39
+       [24/Mar/2011 15:01:15] "GET / HTTP/1.1" 302 0
+       [24/Mar/2011 15:01:15] "GET /polls/ HTTP/1.1" 200 39
 
     See the '302'?  By returning a ``HttpResponseRedirect``, 
     you **redirected** the user to a different page!  Learn more about status
@@ -1058,32 +1051,32 @@ In our simple poll app, we'll create two models: ``Polls`` and ``Choices``.  As 
 spec from the customer:
 
 * A poll has:
-    
-    * a question
-    * a publication date. 
+
+  * a question
+  * a publication date. 
 
 * A choice has two fields:
-    
-    * the text of the choice 
-    * a vote tally. 
+
+  * the text of the choice 
+  * a vote tally. 
 
 Each ``Choice`` is associated with a ``Poll`` and each ``Poll`` has associated ``Choices``. 
 We will respesent these concepts with python classes derived from ``django.db.models``.
 
 #. Edit the ``polls/models.py`` file so it looks like this:
 
-    .. code-block:: python
+   .. code-block:: python
 
-         from django.db import models
-         
-         class Poll(models.Model):
-             question = models.CharField(max_length=200)
-             pub_date = models.DateTimeField()
-         
-         class Choice(models.Model):
-             poll = models.ForeignKey(Poll)
-             choice = models.CharField(max_length=200)
-             votes = models.IntegerField()
+      from django.db import models
+
+      class Poll(models.Model):
+          question = models.CharField(max_length=200)
+          pub_date = models.DateTimeField()
+
+      class Choice(models.Model):
+          poll = models.ForeignKey(Poll)
+          choice = models.CharField(max_length=200)
+          votes = models.IntegerField()
 
 #. Save the ``models.py`` file.
 
@@ -1117,17 +1110,17 @@ Unfortunately, Django (and most database-using software) can't figure out how to
 
 Now that we've made our first version of our models file, let's set up our polls app to work with South so that we can make migrations with it in the future!
 
-#. On the command line, write:
-     
-    .. code-block:: bash
-        
-         $ python manage.py schemamigration polls --initial
+On the command line, write:
+
+.. code-block:: bash
+
+   $ python manage.py schemamigration polls --initial
 
 As you can see, that’s created a migrations directory for us, and made a new migration inside it. All we need to do now is apply our new migration:
 
-    .. code-block:: bash
-        
-         $ python manage.py migrate polls
+.. code-block:: bash
+
+   $ python manage.py migrate polls
 
 Great! Now our database file knows about polls and its new models, and if we need to change our models, South is set up to handle those change. We'll come back to South later.
 
@@ -1159,7 +1152,7 @@ Now Django knows to include the polls app.
 
     .. code-block:: bash
 
-        python manage.py syncdb
+       python manage.py syncdb
 
 The syncdb looks for ``apps`` that have not yet been set up, or have changed in ways that it can understand. To set them up, 
 it runs the necessary SQL commands against your database. This creates all the 
@@ -1177,7 +1170,7 @@ the free API Django gives you. To invoke the Python shell, use this command:
 
 .. code-block:: bash
 
-    python manage.py shell
+   python manage.py shell
 
 We're using this instead of simply typing "python", because manage.py sets 
 up the project's environment for you. "Setting up the environment" involves two things:
@@ -1209,21 +1202,21 @@ Once you're in the shell, explore the database API:
 
     .. code-block:: python
 
-         >>> import datetime
-         >>> p = Poll(question="What is the Weirdest Cookbook Ever?", pub_date=datetime.datetime.now())
+       >>> import datetime
+       >>> p = Poll(question="What is the Weirdest Cookbook Ever?", pub_date=datetime.datetime.now())
 
 #.  Save the ``Poll`` instance into the database. You have to call save() explicitly.
 
     .. code-block:: python
 
-        >>> p.save()
+       >>> p.save()
 
 #.  Get the ``id`` of the Poll instance. Because it's been saved, it has an ID in the database
 
     .. code-block:: python
 
-         >>> p.id
-         1
+       >>> p.id
+       1
 
 #.  What other methods and attributes does this ``Poll`` instance have?
 
@@ -1236,27 +1229,27 @@ Once you're in the shell, explore the database API:
 
     .. code-block:: python
 
-         >>> p.question
-         "What is the Weirdest Cookbook Ever?"
-         >>> p.pub_date
-         datetime.datetime(2007, 7, 15, 12, 00, 53)
+       >>> p.question
+       "What is the Weirdest Cookbook Ever?"
+       >>> p.pub_date
+       datetime.datetime(2007, 7, 15, 12, 00, 53)
 
 #.  Send the Poll back in time:
 
     .. code-block:: python
 
-         # Change values by changing the attributes, then calling save().
-         >>> p.pub_date = datetime.datetime(2007, 4, 1, 0, 0)
-         >>> p.save()
-         >>> p.pub_date
-         datetime.datetime(2007, 4, 1, 0, 0)
+       # Change values by changing the attributes, then calling save().
+       >>> p.pub_date = datetime.datetime(2007, 4, 1, 0, 0)
+       >>> p.save()
+       >>> p.pub_date
+       datetime.datetime(2007, 4, 1, 0, 0)
 
 #.  Ask Django to show a list of all the Poll objects available:
 
     .. code-block:: python
 
-         >>> Poll.objects.all()
-         [<Poll: Poll object>]
+       >>> Poll.objects.all()
+       [<Poll: Poll object>]
 
 Fix The Hideous Default Representation
 ---------------------------------------------
@@ -1301,44 +1294,44 @@ It's important to add ``__unicode__()`` methods to your models, not only for you
 
 #. Start a new Python interactive shell by running ``python manage.py shell``::
 
-    >>> from polls.models import Poll, Choice
+   >>> from polls.models import Poll, Choice
 
 #. Verify our __unicode__() addition worked::
 
-    >>> Poll.objects.all()
-    [<Poll: What is the Weirdest Cookbook Ever?>]
+   >>> Poll.objects.all()
+   [<Poll: What is the Weirdest Cookbook Ever?>]
 
 #. Search your database using the ``filter`` method on the ``objects`` attribute of ``Poll``.
 
 
-    >>> polls = Poll.objects.filter(question="What is the Weirdest Cookbook Ever?")
-    >>> polls
-    [<Poll: What is the Weirdest Cookbook Ever?>]
-    >>> polls[0].id  # remember python lists start with element 0.
-    1
+   >>> polls = Poll.objects.filter(question="What is the Weirdest Cookbook Ever?")
+   >>> polls
+   [<Poll: What is the Weirdest Cookbook Ever?>]
+   >>> polls[0].id  # remember python lists start with element 0.
+   1
 
-    If you try to search for a poll that does not exist, ``filter`` will give you the empty list. The ``get`` method will always return one hit, or raise an exception.
+   If you try to search for a poll that does not exist, ``filter`` will give you the empty list. The ``get`` method will always return one hit, or raise an exception.
 
-    .. code-block:: python
+   .. code-block:: python
 
-         >>> Poll.objects.filter(question="What is the Weirdest Cookbook Ever?")
-         []
-         
-         >>> Poll.objects.get(id=1)
-         <Poll: What is the Weirdest Cookbook Ever?>
-         >>> Poll.objects.get(id=2)
-         Traceback (most recent call last):
-             ...
-         DoesNotExist: Poll matching query does not exist.
+      >>> Poll.objects.filter(question="What is the Weirdest Cookbook Ever?")
+      []
+
+      >>> Poll.objects.get(id=1)
+      <Poll: What is the Weirdest Cookbook Ever?>
+      >>> Poll.objects.get(id=2)
+      Traceback (most recent call last):
+          ...
+      DoesNotExist: Poll matching query does not exist.
 
 Add Choices
 ------------------------
 
-#.  Observe, there is a Poll in the database, but it has no Choices.
+#.  Observe, there is a Poll in the database, but it has no Choices.::
 
-     >>> p = Poll.objects.get(id=1)
-     >>> p.choice_set.all()
-     []
+        >>> p = Poll.objects.get(id=1)
+        >>> p.choice_set.all()
+        []
 
 #.  Create three choices::
 
@@ -1359,10 +1352,10 @@ Add Choices
 
     .. code-block:: python
 
-         >>> p.choice_set.all()
-         [<Choice: To Serve Man>, <Choice: The Original Road Kill Cookbook>, <Choice: Mini-Mart A La Carte>]
-         >>> p.choice_set.count()
-         3
+       >>> p.choice_set.all()
+       [<Choice: To Serve Man>, <Choice: The Original Road Kill Cookbook>, <Choice: Mini-Mart A La Carte>]
+       >>> p.choice_set.count()
+       3
 
 #.  No really.  Can one be a ``Choice`` for a ``Poll`` that doesn't yet exist?::
 
@@ -1376,50 +1369,50 @@ Heavy Metal Polling!
 
 #. Paste this block of code into a separate file, run ``python manage.py shell``, import and run this block of TOTALLY METAL CODE:
 
-    .. code-block:: python
+   .. code-block:: python
 
-        import datetime
-        import random
+      import datetime
+      import random
 
-        from polls.models import Choice,Poll
+      from polls.models import Choice,Poll
 
-        opinions = ['HEINOUS!', 'suxxors', 'rulez!', 
-        'AWESOME!', 'righTEOUS', 'HAVE MY BABY!!!!',
-        'BEYOND METAL','SUCKS','RULES', 'TOTALLY RULES']
+      opinions = ['HEINOUS!', 'suxxors', 'rulez!', 
+      'AWESOME!', 'righTEOUS', 'HAVE MY BABY!!!!',
+      'BEYOND METAL','SUCKS','RULES', 'TOTALLY RULES']
 
-        band_names = '''
-        Abonos Meshuggah Xasthur Silencer Fintroll Beherit Basilisk Cryptopsy
-        Tvangeste Weakling Anabantha Behemoth Moonsorrow Morgoth Nattefrost
-        Aggaloch Enthroned Korpiklaani Nile Summoning Nocturnia Smothered
-        Scatered Summoning Wyrd Amesoeurs Solstafi Helrunar Vargnatt Agrypnie
-        Wyrd Agrypnie Blodsrit Burzum Chaostar Decadence Bathory Leviathan
-        Hellraiser Mayhem Katharsis Helheim Agalloch Therion Windir Ragnarok
-        Arckanum Durdkh Emperor Sulphur Tsjuder Ulver Marduk Luror Edguy
-        Enslaved Epica Gorgoroth Gothminister Immortal Isengard Kamelot
-        Kataklysm Kreator Maras Megadeath Metallica Moonspell Morgul Morok
-        Morphia Necrophagist Opeth Origin Pantera Pestilence Putrefy Vader
-        Runenblut Possessed Sanatorium Profanum Satyricon Antichrist Sepultura
-        Eluveitie Altare Gallhammer Sirenia Slavland Krada Tribulation Venom
-        ObituarObituarObituarObituarObituarObituarismember Vomitory
-        Suffocation Taake Testament ToDieFor Unleashed'''.strip().split()
-        
-        
-        def make_metal_poll(bandname,opinions):
-            pub = datetime.datetime.now()
-            marks = '?' * random.randint(1,5)
-            question = bandname + marks
-            chosen = random.sample(opinions,5)
-            choices = list()
-            for c in chosen:
-                votes = random.randint(1,1000)
-                choices.append(Choice(choice=c,votes=votes))
-            
-            p = Poll(question=question,pub_date=pub)
-            p.save()
-            p.choice_set=choices
-            return p
-        
-        polls = [make_metal_poll(band,opinions) for band in band_names]
+      band_names = '''
+      Abonos Meshuggah Xasthur Silencer Fintroll Beherit Basilisk Cryptopsy
+      Tvangeste Weakling Anabantha Behemoth Moonsorrow Morgoth Nattefrost
+      Aggaloch Enthroned Korpiklaani Nile Summoning Nocturnia Smothered
+      Scatered Summoning Wyrd Amesoeurs Solstafi Helrunar Vargnatt Agrypnie
+      Wyrd Agrypnie Blodsrit Burzum Chaostar Decadence Bathory Leviathan
+      Hellraiser Mayhem Katharsis Helheim Agalloch Therion Windir Ragnarok
+      Arckanum Durdkh Emperor Sulphur Tsjuder Ulver Marduk Luror Edguy
+      Enslaved Epica Gorgoroth Gothminister Immortal Isengard Kamelot
+      Kataklysm Kreator Maras Megadeath Metallica Moonspell Morgul Morok
+      Morphia Necrophagist Opeth Origin Pantera Pestilence Putrefy Vader
+      Runenblut Possessed Sanatorium Profanum Satyricon Antichrist Sepultura
+      Eluveitie Altare Gallhammer Sirenia Slavland Krada Tribulation Venom
+      ObituarObituarObituarObituarObituarObituarismember Vomitory
+      Suffocation Taake Testament ToDieFor Unleashed'''.strip().split()
+
+
+      def make_metal_poll(bandname,opinions):
+          pub = datetime.datetime.now()
+          marks = '?' * random.randint(1,5)
+          question = bandname + marks
+          chosen = random.sample(opinions,5)
+          choices = list()
+          for c in chosen:
+              votes = random.randint(1,1000)
+              choices.append(Choice(choice=c,votes=votes))
+
+          p = Poll(question=question,pub_date=pub)
+          p.save()
+          p.choice_set=choices
+          return p
+
+      polls = [make_metal_poll(band,opinions) for band in band_names]
 
 #.  Discuss what this code does!
 
@@ -1438,26 +1431,26 @@ Oh no! Your client, VOEL, has decided that they want to add a feature to the spe
 
 #. Open polls/models.py and edit the Poll class:
 
-    .. code-block:: python
+   .. code-block:: python
 
-         class Poll(models.Model):
-             question = models.CharField(max_length=200)
-             pub_date = models.DateTimeField()
-             end_date = models.DateTimeField(blank=True,null=True)
+      class Poll(models.Model):
+          question = models.CharField(max_length=200)
+          pub_date = models.DateTimeField()
+          end_date = models.DateTimeField(blank=True,null=True)
 
 By setting ``blank=True`` and ``null=True``, we're telling Django that this field is optional, so it's okay if it's empty and a poll doesn't have an end date.
 
 #. Make a migration so the database knows about the new ``end_date`` field.
 
-    .. code-block:: bash
+   .. code-block:: bash
 
-         $ python manage.py schemamigration polls --auto
+      $ python manage.py schemamigration polls --auto
 
 #. Apply the migration.
 
-    .. code-block:: bash
+   .. code-block:: bash
 
-         $ python manage.py migrate polls
+      $ python manage.py migrate polls
 
 Save and commit
 -------------------
@@ -1498,13 +1491,13 @@ in the discuss of models.  (Sorry, I guess we can't forget about databases quite
 
     .. code-block:: python
 
-         from polls.models import Poll
-         from django.http import HttpResponse
-         
-         def index(request):
-             latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
-             output = ', '.join([p.question for p in latest_poll_list])
-             return HttpResponse(output)
+       from polls.models import Poll
+       from django.http import HttpResponse
+
+       def index(request):
+           latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
+           output = ', '.join([p.question for p in latest_poll_list])
+           return HttpResponse(output)
 
 #.  Restart the dev server, and navigate to http://127.0.0.1:8000/polls/.
     You should see the text of the last 5 HEAVY METAL polls. 
@@ -1516,13 +1509,13 @@ in the discuss of models.  (Sorry, I guess we can't forget about databases quite
 
     .. code-block:: python
 
-         from django.shortcuts import render_to_response
-         from polls.models import Poll
-         
-         def index(request):
-             latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
-             context = {'latest_poll_list': latest_poll_list}
-             return render_to_response('polls/index.html', context)
+       from django.shortcuts import render_to_response
+       from polls.models import Poll
+
+       def index(request):
+           latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
+           context = {'latest_poll_list': latest_poll_list}
+           return render_to_response('polls/index.html', context)
 
     To recap what this does:
 
@@ -1533,7 +1526,7 @@ in the discuss of models.  (Sorry, I guess we can't forget about databases quite
     ``render_to_response`` loads the template called ``polls/index.html`` and passes it a 
     value as ``context``. The context is a dictionary mapping template variable names to 
     Python objects.
-    
+
     If you can read this this ``view`` function without being overwhelmed, then you understand 
     the basics of Django views. Now is a good time to reflect and make sure you do. 
 
@@ -1545,8 +1538,8 @@ in the discuss of models.  (Sorry, I guess we can't forget about databases quite
 
     .. code-block:: bash
 
-         TemplateDoesNotExist at /polls/
-         polls/index.html
+       TemplateDoesNotExist at /polls/
+       polls/index.html
 
     Ah. There's no template yet. Let's make one.
 
@@ -1555,32 +1548,32 @@ in the discuss of models.  (Sorry, I guess we can't forget about databases quite
 
     .. code-block:: bash
 
-         mkdir -p polls/templates/polls
+       mkdir -p polls/templates/polls
 
 #.  Edit ``polls/templates/polls/index.html`` to contain.
 
     .. code-block:: html
-        
-         {% if latest_poll_list %}
-             <ul>
-             {% for poll in latest_poll_list %}
-                 <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
-             {% endfor %}
-             </ul>
-         {% else %}
-             <p>No polls are available.</p>
-         {% endif %}
-         
+
+       {% if latest_poll_list %}
+           <ul>
+           {% for poll in latest_poll_list %}
+               <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
+           {% endfor %}
+           </ul>
+       {% else %}
+           <p>No polls are available.</p>
+       {% endif %}
+
 #. Edit ``TEMPLATE_DIRS`` in ``settings.py`` to have the full path to the templates folder inside your new app. On my computer, this looks like:
-    
-    .. code-block:: python
-        
-         TEMPLATE_DIRS = (
-            # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-            # Always use forward slashes, even on Windows.
-            # Don't forget to use absolute paths, not relative paths.
-            '/karen/Code/pystarl/django-projects/myproject/polls/templates',
-        )
+
+   .. code-block:: python
+
+      TEMPLATE_DIRS = (
+         # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+         # Always use forward slashes, even on Windows.
+         # Don't forget to use absolute paths, not relative paths.
+         '/karen/Code/pystarl/django-projects/myproject/polls/templates',
+      )
 
 #.  Reload http://127.0.0.1:8000/polls/ . 
     You should see a bulleted-list containing some of the HEAVY METAL POLLS.
@@ -1596,16 +1589,16 @@ given poll.
 
 #. Edit the ``views.py`` file. This view uses Python ``exceptions``:
 
-    .. code-block:: python
+   .. code-block:: python
 
-         from django.http import Http404
-         # ...
-         def detail(request, poll_id):
-             try:
-                 p = Poll.objects.get(id=poll_id)
-             except Poll.DoesNotExist:
-                 raise Http404
-             return render_to_response('polls/detail.html', {'poll': p})
+      from django.http import Http404
+      # ...
+      def detail(request, poll_id):
+          try:
+              p = Poll.objects.get(id=poll_id)
+          except Poll.DoesNotExist:
+              raise Http404
+          return render_to_response('polls/detail.html', {'poll': p})
 
     Notice that view raises the ``Http404`` exception if a poll with the 
     requested ID doesn't exist.  
@@ -1614,7 +1607,7 @@ given poll.
 
     .. code-block:: html
 
-        {{ poll }}
+       {{ poll }}
 
 #.  Verify your "detail" view works. Try it: http://127.0.0.1:8000/polls/1/
 
@@ -1645,9 +1638,9 @@ given poll.
 #.  **Discussion**:  raising a 404 here (Page Not Found) is meant to be 
     illustrative.  404 is a blunt tool.  In a real application, maybe we
     would redirect the user to the 'create a poll' page, or the search page.
-    
+
     **Discuss** in your group what behavior *should* happen in this case.
-    
+
     #. Why did the user land here?
     #. What did they expect to find?
     #. What should happen next?
@@ -1663,13 +1656,12 @@ Add More Detail to the Details
 
     .. code-block:: html
 
-        <h1>{{ poll.question }}</h1>
-        <ul>
-        {% for choice in poll.choice_set.all %}
-            <li>{{ choice.choice }}</li>
-        {% endfor %}
-        </ul>
-
+       <h1>{{ poll.question }}</h1>
+       <ul>
+       {% for choice in poll.choice_set.all %}
+           <li>{{ choice.choice }}</li>
+       {% endfor %}
+       </ul>
 
 #.  The ``django.template`` system uses dot-lookup syntax to access variable attributes. 
     Django's template language is a bit looser than standard python.
@@ -1721,19 +1713,19 @@ Create the form
     an HTML <form> element:
 
     .. code-block:: html
-        
-        <h1>{{ poll.question }}</h1>
-        
-        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-        
-        <form action="/polls/{{ poll.id }}/vote/" method="post">
-        {% csrf_token %}
-        {% for choice in poll.choice_set.all %}
-            <input type="radio" name="choice" value="{{ choice.id }}" />
-            <label>{{ choice.choice }}</label><br />
-        {% endfor %}
-        <input type="submit" value="Vote" />
-        </form>
+
+       <h1>{{ poll.question }}</h1>
+
+       {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+       <form action="/polls/{{ poll.id }}/vote/" method="post">
+       {% csrf_token %}
+       {% for choice in poll.choice_set.all %}
+           <input type="radio" name="choice" value="{{ choice.id }}" />
+           <label>{{ choice.choice }}</label><br />
+       {% endfor %}
+       <input type="submit" value="Vote" />
+       </form>
 
 #. There is a lot going on there. A quick rundown:
 
@@ -1755,14 +1747,13 @@ Create the form
         #. Fix ``views.py`` to protect against CSRF hacking:
 
         .. code-block:: python
-            
-            from django.template import RequestContext
-            from django.shortcuts import get_object_or_404, render_to_response
-            # ...
-            def detail(request, poll_id):
-                p = get_object_or_404(Poll, pk=poll_id)
-                return render_to_response('polls/detail.html', {'poll': p}, context_instance=RequestContext(request))
 
+           from django.template import RequestContext
+           from django.shortcuts import get_object_or_404, render_to_response
+           # ...
+           def detail(request, poll_id):
+               p = get_object_or_404(Poll, pk=poll_id)
+               return render_to_response('polls/detail.html', {'poll': p}, context_instance=RequestContext(request))
 
     *   Notice we also added a function that checks if a ``404`` is returned for us.  
         This is a common pattern, so there is a pre-built shortcut function for it
@@ -1781,7 +1772,7 @@ Process the form
 
     .. code-block:: html
 
-         (r'^(?P<poll_id>\d+)/vote/$', 'vote'),
+       (r'^(?P<poll_id>\d+)/vote/$', 'vote'),
 
 #.  Recall also that we created a dummy implementation of the ``vote()`` function. 
 
@@ -1789,29 +1780,29 @@ Process the form
 
     .. code-block:: python
 
-         from django.shortcuts import get_object_or_404, render_to_response
-         from django.http import HttpResponseRedirect, HttpResponse
-         from django.core.urlresolvers import reverse
-         from django.template import RequestContext
-         from polls.models import Choice, Poll
-         # ...
-         def vote(request, poll_id):
-             p = get_object_or_404(Poll, pk=poll_id)
-             try:
-                 selected_choice = p.choice_set.get(pk=request.POST['choice'])
-             except (KeyError, Choice.DoesNotExist):
-                 # Redisplay the poll voting form.
-                 return render_to_response('polls/detail.html', {
-                     'poll': p,
-                     'error_message': "You didn't select a choice.",
-                 }, context_instance=RequestContext(request))
-             else:
-                 selected_choice.votes += 1
-                 selected_choice.save()
-                 # Always return an HttpResponseRedirect after successfully dealing
-                 # with POST data. This prevents data from being posted twice if a
-                 # user hits the Back button.
-                 return HttpResponseRedirect(reverse('polls.views.results', args=(p.id,)))
+       from django.shortcuts import get_object_or_404, render_to_response
+       from django.http import HttpResponseRedirect, HttpResponse
+       from django.core.urlresolvers import reverse
+       from django.template import RequestContext
+       from polls.models import Choice, Poll
+       # ...
+       def vote(request, poll_id):
+           p = get_object_or_404(Poll, pk=poll_id)
+           try:
+               selected_choice = p.choice_set.get(pk=request.POST['choice'])
+           except (KeyError, Choice.DoesNotExist):
+               # Redisplay the poll voting form.
+               return render_to_response('polls/detail.html', {
+                   'poll': p,
+                   'error_message': "You didn't select a choice.",
+               }, context_instance=RequestContext(request))
+           else:
+               selected_choice.votes += 1
+               selected_choice.save()
+               # Always return an HttpResponseRedirect after successfully dealing
+               # with POST data. This prevents data from being posted twice if a
+               # user hits the Back button.
+               return HttpResponseRedirect(reverse('polls.views.results', args=(p.id,)))
 
     This code includes a few things we haven't covered yet in this tutorial:
 
@@ -1836,7 +1827,7 @@ Process the form
 
     .. code-block:: bash
 
-          '/polls/3/results/'
+       '/polls/3/results/'
 
     where the ``3`` is the value of ``p.id``. This redirected URL will then call the ``results`` view to display
     the final page. Note that you need to use the full name of the view here (including the prefix).
@@ -1859,17 +1850,16 @@ Process the form
 #.  Create a ``/polls/templates/polls/results.html`` template:
 
     .. code-block:: html
-        
-        <h1>{{ poll.question }}</h1>
-        
-        <ul>
-        {% for choice in poll.choice_set.all %}
-            <li>{{ choice.choice }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-        {% endfor %}
-        </ul>
-        
-        <a href="/polls/{{ poll.id }}/">Vote again?</a>
-        
+
+       <h1>{{ poll.question }}</h1>
+
+       <ul>
+       {% for choice in poll.choice_set.all %}
+           <li>{{ choice.choice }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+       {% endfor %}
+       </ul>
+
+       <a href="/polls/{{ poll.id }}/">Vote again?</a>
 
 #.  Restart your dev server.
 
@@ -1886,11 +1876,11 @@ Process the form
 
     .. code-block:: bash
 
-        # in myprojects
-        git status
-        git add  <some files> # whatever files need adding!
-        git commit -m "protoype complete.  all tests pass."
-        git push origin master
+       # in myprojects
+       git status
+       git add  <some files> # whatever files need adding!
+       git commit -m "protoype complete.  all tests pass."
+       git push origin master
 
 
 Part 16: Editing your polls in the Django admin interface
@@ -1929,18 +1919,18 @@ The Django admin site is not activated by default – it’s an opt-in thing.
 
         .. code-block:: bash
 
-            from django.contrib import admin
-            admin.autodiscover()
-            
-            # and
-            (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-            (r'^admin/', include(admin.site.urls)),
+           from django.contrib import admin
+           admin.autodiscover()
+
+           # and
+           (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+           (r'^admin/', include(admin.site.urls)),
 
     #.  Since you have added a new application to INSTALLED_APPS, the database tables need to be updated:
 
         .. code-block:: bash
 
-            python manage.py syncdb
+           python manage.py syncdb
 
 
 Restart the development server
@@ -1953,7 +1943,7 @@ still running the development server. You can start the development server like 
 
 .. code-block:: python
 
-    python manage.py runserver
+   python manage.py runserver
 
 http://127.0.0.1:8000/admin/ should show you the admin site's login screen.
 
@@ -1981,15 +1971,15 @@ interface.
 #.  Create ``polls/admin.py``, and edit it to look like this:
 
     .. code-block:: python
-        
-        from polls.models import Poll
-        from django.contrib import admin
-        
-        admin.site.register(Poll)
-        
+
+       from polls.models import Poll
+       from django.contrib import admin
+
+       admin.site.register(Poll)
+
 
 #.  Restart the dev server.   
-    
+
     Normally,  the server auto-reloads code every time you modify a file, but the action of
     creating a new file doesn't trigger the auto-reloading logic. You can stop it by 
     typing ``Ctrl-C`` (``Ctrl-Break`` on Windows); then use the ``up`` arrow on your
@@ -2011,11 +2001,10 @@ option, which is a tuple of field names to display, as
 columns, on the change list page for the object:
 
 .. code-block:: python
-    
+
      class PollAdmin(admin.ModelAdmin):
          # ...
          list_display = ('question', 'pub_date')
-    
 
 Just for good measure, let's also include the ``was_published_today`` 
 custom method from way back in the **models** part of this workshop:
@@ -2025,7 +2014,6 @@ custom method from way back in the **models** part of this workshop:
     class PollAdmin(admin.ModelAdmin):
         # ...
         list_display = ('question', 'pub_date', 'was_published_today')
-    
 
 #.  Examine the polls list.
 
@@ -2040,10 +2028,10 @@ custom method from way back in the **models** part of this workshop:
 #.  Add some search capability. Add this to ``class PollAdmin``:
 
     .. code-block:: python
-         
-         class PollAdmin(admin.ModelAdmin):
-         # ...
-             search_fields = ['question']
+
+       class PollAdmin(admin.ModelAdmin):
+           # ...
+           search_fields = ['question']
 
     That adds a search box at the top of the change list. When somebody 
     enters search terms, Django will search the question field. You can use 
@@ -2054,15 +2042,14 @@ custom method from way back in the **models** part of this workshop:
     it'd be convenient to be able to drill down by date. Add this line:
 
     .. code-block:: python
-        
-         class PollAdmin(admin.ModelAdmin):
-         # ...
-             date_hierarchy = 'pub_date'
+
+       class PollAdmin(admin.ModelAdmin):
+           # ...
+           date_hierarchy = 'pub_date'
 
     That adds hierarchical navigation, by date, to the top 
     of the change list page. At top level, it displays all available 
     years. Then it drills down to months and, ultimately, days.
-
 
 #.  **Discuss as a group**   Polls app vs. admin
 
@@ -2072,18 +2059,15 @@ custom method from way back in the **models** part of this workshop:
     * which has cleaner code?
     * [:ref:`answer <webapp_answers_polls_vs_admin>`]
 
-
 #.  That's the basics of the Django admin interface.  Employ it liberally!
 
 #.  Relax, and bask in self-satisfaction.
-
 
 
 Part 17: Save, Commit, Push.
 ================================
 
 You know what to do now, right? :)
-
 
 
 Part 18: Takeways and Next Steps
@@ -2119,13 +2103,11 @@ What next?
 * Give feedback so we can make the course and text better
 * Expand!  Choose a topic area, and dive in:  obvious choices might be:
 
-    * Python (we did barely any!)
-    * Django
-    * SQL / DB work
-    * Other Python web frameworks (Pyramid/Pylons, Twisted.web)
-    
+  * Python (we did barely any!)
+  * Django
+  * SQL / DB work
+  * Other Python web frameworks (Pyramid/Pylons, Twisted.web)
+
 * Fill a hole:  we didn't even get to much HTML, CSS, JavaScript, JQuery, or 
   the like!
 * Review.  Read the online Django tutorial or Djangobook
-
-

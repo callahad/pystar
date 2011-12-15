@@ -1,11 +1,11 @@
 Command Line Navigation
-================================
+=======================
 
 This badge is to learn how to navigate using the command line (CLI).
 
-    .. note:
+    .. note::
 
-        The command line is case sensitive. 
+       The command line is case sensitive. 
 
 Commands
 --------
@@ -18,12 +18,12 @@ Commands used when navigating in the CLI:
 * pwd
 
 Concepts
----------
+--------
 
 Navigation requires an understanding of the above commands and of file system paths, both relative and absolute.
 
 Absolute power corrupts absolutely
-....................................
+..................................
 
 Absolute paths are the full name to a file or directory starting from root.
 
@@ -32,7 +32,7 @@ If I want to navigate to a folder in my Documents folder (on a Mac), the absolut
     $ cd /Users/Amanda/Documents/Thesis/
 
 It's all relative
-..................
+.................
 
 Relative paths are partial path names relative to where you are in the directory structure.
 
@@ -77,11 +77,11 @@ Here's an example of what your CLI screen might look like after completing the a
     amanda-nyrens-macbook-pro:~ Amanda$ pwd
     /Users/Amanda
     amanda-nyrens-macbook-pro:~ Amanda$ ls
-    Calibre Library	Documents	Icon?		Movies		Pictures	Sites		VirtualBox VMs
-    Desktop		Downloads	Library		Music		Public		Speelies	mydir
+    Calibre Library  Documents        Icon?            Movies           Pictures         Sites            VirtualBox VMs
+    Desktop          Downloads        Library          Music            Public           Speelies         mydir
     amanda-nyrens-macbook-pro:~ Amanda$ cd Desktop/
     amanda-nyrens-macbook-pro:Desktop Amanda$ ls
-    command.txt	git-amanda	pystar		python
+    command.txt  git-amanda   pystar       python
     amanda-nyrens-macbook-pro:Desktop Amanda$ ls -l
     total 424
     -rw-rw-rw-   1 Amanda  staff  213063 Jul 27  1999 command.txt
@@ -90,7 +90,7 @@ Here's an example of what your CLI screen might look like after completing the a
     drwxr-xr-x  33 Amanda  staff    1122 Apr  9 09:23 python
     amanda-nyrens-macbook-pro:Desktop Amanda$ cd git-amanda/pystar_amanda/
     amanda-nyrens-macbook-pro:pystar_amanda Amanda$ ls -a
-    .		..		.DS_Store	.git		README.rst	docs		utils		web
+    .           ..          .DS_Store   .git        README.rst  docs        utils       web
     amanda-nyrens-macbook-pro:pystar_amanda Amanda$ pwd
     /Users/Amanda/Desktop/git-amanda/pystar_amanda
     amanda-nyrens-macbook-pro:pystar_amanda Amanda$ cd ../../../Documents/Thesis/
@@ -112,10 +112,4 @@ Here's an example of what your CLI screen might look like after completing the a
     -rw-r--r--@  1 Amanda  staff  14669824 May  7  2006 thesis.ppt
     amanda-nyrens-macbook-pro:Thesis Amanda$ pwd
     /Users/Amanda/Documents/Thesis
-    amanda-nyrens-macbook-pro:Thesis Amanda$ 
-
-
-
-
-
-
+    amanda-nyrens-macbook-pro:Thesis Amanda$

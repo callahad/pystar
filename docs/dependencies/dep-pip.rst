@@ -1,5 +1,3 @@
-
-
 .. _dep-pip-label:
 
 pip

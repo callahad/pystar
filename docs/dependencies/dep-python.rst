@@ -1,5 +1,3 @@
-
-
 .. _dep-python-label:
 
 python

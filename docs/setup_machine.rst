@@ -23,4 +23,3 @@ of the workshop.
     dependencies/dep-virtualenv.rst
     dependencies/dep-pip.rst
     dependencies/dep-django.rst
-

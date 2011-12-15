@@ -8,5 +8,3 @@ jQuery
 #.  edit an html page
 #.  get jQuery
 #.  go wild!
-
-
